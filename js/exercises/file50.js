@@ -31,6 +31,6 @@ function myApp(){
         let firstName = "santosh";
         console.log(firstName);
     }
-    console.log(firstName);
+    console.log("Error will occur due to block scope ", firstName);
 }
 myApp();
