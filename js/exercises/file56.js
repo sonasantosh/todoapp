@@ -15,6 +15,21 @@ const numbers = [1,2,3,4,5];
 //     console.log(index, value)
 // });
 
-numbers.forEach((value, index)=>{
-    console.log("On Index ", index, value*2);
-});
+// numbers.forEach((value, index)=>{
+//     console.log("On Index ", index, value*2);
+// });
+
+const users = [
+    {firstName: "santosh", age: 29, },
+    {firstName: "shivam", age: 27, },
+    {firstName: "sona", age: 24, },
+    {firstName: "amit", age: 22, },
+];
+
+// users.forEach((value, index)=>{
+//     console.log(value.firstName);
+// });
+
+for(let user of users){
+    console.log(user.firstName);
+}
