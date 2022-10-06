@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>Carzso Todo</title>
+</head>
+<body>
+    
+    <header class="header py-3 bg-dark text-light">
+        <div class="container">
+            <p class="text-center">Carzso Header</p>
+        </div>
+    </header>
+    <main class="todo">
+        <section class="todo-section py-4">
+            <div class="container">
+                <h2 class="mb-4">Enter Your Todo</h2>
+                <form id="todoForm">
+                    <div class="form-control mb-3">
+                        <label for="todoItem">Todo Title</label>
+                        <input type="text" name="todoItem" id="todoItem">
+                    </div>
+                    <div class="form-control mb-3">
+                        <label for="desc">Description : </label>
+                        <input type="text" name="desc" id="desc">
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <section class="show-todo-section py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-3">Your Todo List</h2>
+                        <ul class="showTodoList">
+                            <!-- <li>
+                                <span class="left todoText">Todo1 - Description1</span>
+                                <span class="right">
+                                    <button type="button" class="btn btn-primary btn-sm me-2 taskDone"> Done </button>
+                                    <button type="button" class="btn btn-secondary btn-sm taskDelete"> Delete </button>
+                                </span>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer py-3 bg-dark text-light">
+        <div class="container">
+            <p class="text-center">Carzso Footer</p>
+        </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
