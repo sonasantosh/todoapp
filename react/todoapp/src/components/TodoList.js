@@ -10,7 +10,7 @@ function TodoList(props){
                         <h2 className='mb-4'>Toto List Component. - {props.title}</h2>
                         {props.todos.length===0? "No Todos to Display!" :
                             props.todos.map((item)=>{
-                                return <TodoItem todoItem={item} key={item.sno} onDelete={props.onDelete} />
+                                return <TodoItem todoItem={item} key={item.sno} onDelete={props.onDelete} onDone={props.onDone} />
                             })
                         }
                     </div>

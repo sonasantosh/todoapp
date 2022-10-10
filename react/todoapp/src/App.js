@@ -20,6 +20,11 @@ function App() {
     }));
     localStorage.setItem("todos", JSON.stringify(todos));
   }
+  const onDone = (e)=>{
+    e.target.parentNode.children[0].style.textDecoration = "line-through";
+    e.target.parentNode.children[1].style.textDecoration = "line-through";
+    e.target.disabled = "true";
+  };
   const createTodoItem = (title, desc)=>{
     let sno = todos.length===0 ?  1 : todos[todos.length-1].sno + 1;
     const myTodo = {
@@ -45,7 +50,7 @@ function App() {
           <Route path="/"  element={
             <>
               <CreateTodo title="Create a Todo" createTodoItem={createTodoItem}/>
-              <TodoList title="Todo TodoList" todos={todos} onDelete={onDelete}/>
+              <TodoList title="Todo TodoList" todos={todos} onDelete={onDelete} onDone={onDone}/>
             </>
           } />
           <Route path="/about" element={<AboutUs />} />
